@@ -1,0 +1,13 @@
+.Header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.Header .header-logo{
+    height: 100%;
+    left : 10px;
+    top : 10px;
+}

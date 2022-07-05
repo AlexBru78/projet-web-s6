@@ -1,16 +1,25 @@
-import logo from './logo.jpeg';
+import logo from './assets/logo.jpeg';
 import './App.css';
+import {Button as MuiButton} from "@mui/material"
+import {CssBaseline, ThemeProvider} from "@mui/material";
+import theme from "./theme.js"
+import Home from "./components/Home";
+import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import Header from "./components/Header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        </p>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <CssBaseline>
+            <ThemeProvider theme={theme}>
+                <Router>
+                    <Routes>
+                        <Route path={"/detail"} element={<div/>}/>
+                        <Route path={"/"} element={<Home/>}/>
+                    </Routes>
+                </Router>
+            </ThemeProvider>
+        </CssBaseline>
+    );
 }
 
 export default App;
