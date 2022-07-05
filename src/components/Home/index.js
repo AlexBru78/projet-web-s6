@@ -1,6 +1,7 @@
 import Header from "../Header";
 import {Box, Stack, TextField, Typography} from "@mui/material";
 import Restaurant from "../Restaurant";
+import {getValue} from "@testing-library/user-event/dist/utils";
 
 const Home = () => {
     const items = [
@@ -31,7 +32,11 @@ const Home = () => {
                 justifyContent: "space-around",
                 alignItems: "center"
             }}>
-                <TextField sx={{
+                <TextField onKeyPress={(ev) => {
+                    if (ev.key === 'Enter') {
+                        window.location.pathname = '/search'
+                    }
+                }} sx={{
                     backgroundColor: "#919191",
                     width: "50%"
                 }}
