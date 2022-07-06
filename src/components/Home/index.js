@@ -1,10 +1,52 @@
 import Header from "../Header";
-import {Box, Stack, TextField, Typography} from "@mui/material";
+import {Box, Grid, Stack, Switch, TextField, Typography} from "@mui/material";
 import Restaurant from "../Restaurant";
+import Search from "../Search"
 import {getValue} from "@testing-library/user-event/dist/utils";
+import {Route} from "react-router-dom";
 
 const Home = () => {
     const items = [
+        {
+            name: "macdo",
+            description: "j'ai des hémoroïdes",
+            type: "fast food"
+        },
+        {
+            name: "subway",
+            description: "hello julien",
+            type: "burger"
+        },
+        {
+            name: "macdo",
+            description: "j'ai des hémoroïdes",
+            type: "fast food"
+        },
+        {
+            name: "subway",
+            description: "hello julien",
+            type: "burger"
+        },
+        {
+            name: "macdo",
+            description: "j'ai des hémoroïdes",
+            type: "fast food"
+        },
+        {
+            name: "subway",
+            description: "hello julien",
+            type: "burger"
+        },
+        {
+            name: "macdo",
+            description: "j'ai des hémoroïdes",
+            type: "fast food"
+        },
+        {
+            name: "subway",
+            description: "hello julien",
+            type: "burger"
+        },
         {
             name: "macdo",
             description: "j'ai des hémoroïdes",

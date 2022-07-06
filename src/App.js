@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Header from "./components/Header";
 import Search from "./components/Search";
+import Connexion from "./components/Connexion";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                     <Routes>
                         <Route path={"/search"} element={<Search/>}/>
                         <Route path={"/"} element={<Home/>}/>
+                        <Route path={"/connexion"} element={<Connexion/>}/>
                     </Routes>
                 </Router>
             </ThemeProvider>
