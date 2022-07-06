@@ -5,6 +5,7 @@ import Home from "../Home";
 import "./index.css"
 
 const Connexion = () => {
+
     return (
         <div className="connexion">
             <Header/>
@@ -32,6 +33,7 @@ const Connexion = () => {
                            id="outlined-basic"
                            label="mot de passe"
                            variant="filled"
+                           type="password"
                            InputProps={{
                                disableUnderline: true,
                            }}/>
